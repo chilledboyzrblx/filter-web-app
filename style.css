@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/665eb4f1-f631-4adf-a8c0-ed7c0972d1df/dcyp73f-56dbae2b-5b7f-4367-a0db-44f5c0f7ef3a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY2NWViNGYxLWY2MzEtNGFkZi1hOGMwLWVkN2MwOTcyZDFkZlwvZGN5cDczZi01NmRiYWUyYi01YjdmLTQzNjctYTBkYi00NGY1YzBmN2VmM2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RJiE_cIvsQ8F-o5PvPo_xtXvwW03-WaBQdFtArjeoIQ");
+    background-size:50%;
+}
+
+canvas {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    from { box-shadow: 1px 1px 38px red;}
+    to {box-shadow: 1px 1px 38px rgb(25, 0, 255);}
+}
