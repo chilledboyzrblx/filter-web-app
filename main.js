@@ -1,5 +1,8 @@
-function preload(){
+itemX=0;
+itemY=0;
 
+function preload(){
+    moustache = loadImage("https://i.postimg.cc/y8RHxgF1/moustache-PNG18.png");
 }
 
 function setup(){
@@ -19,6 +22,7 @@ function modelLoaded(){
 
 function draw(){
     image(video, 0, 0, 300, 300);
+    image(moustache,itemX-15,itemY+40, 45, 45);
 }
 
 function take_snapshot(){
@@ -28,7 +32,9 @@ function take_snapshot(){
 function gotPoses(results){
     if(results.length > 0){
         console.log(results);
-        console.log("nose x = " + results[0].pose.nose.x);
-        console.log("nose y = " + results[0].pose.nose.y);
+        itemX = results[0].pose.nose.x;
+        itemY = results[0].pose.nose.x;
+        console.log("moustache x = " + results[0].pose.nose.x);
+        console.log("moustache y = " + results[0].pose.nose.y);
     }
 }
